@@ -44,7 +44,7 @@ function handleRequest(request, response) {
 function getForecast(coords, callback) {
   var options = {
     host: 'api.darksky.net',
-    path: '/forecast/e22bcd76c131550e15aa6fe4f79c1257/' + coords
+    path: '/forecast/e22bcd76c131550e15aa6fe4f79c1257/' + coords +'?units=si'
   };
   https.request(options, function(response) {
     var resp = '';
